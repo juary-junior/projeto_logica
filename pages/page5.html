@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Projeto Lógica computacinal</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./assets/logo.png" alt="Cerebro desafiante" width="150px" height="150px">
+        <h1>Pergunta 5 de 6</h1>
+    </header>
+    <div id="container" class="container">
+        <div class="pergunta">
+            <p>
+                Seja A = {2, 7, 10, 12, 15} e B = {2, 5, 7, 11}.
+                Qual o complementar de B em relação a A?
+            </p>
+        </div>
+        <div class="respostas1e2">
+            <button class="resposta" onclick="showSummary('errada')">
+                {2, 7}
+            </button>
+            <button class="resposta" onclick="showSummary('certa')">
+                {10, 12, 15}
+            </button>
+        </div>
+        <div class="respostas3e4">
+            <button class="resposta" onclick="showSummary('errada')">
+                {5, 11}
+            </button>
+            <button class="resposta" onclick="showSummary('errada')">
+                {2, 5, 7, 10, 11, 12, 15}
+            </button>
+        </div>
+    </div>
+    <div id="feedback" class="hidden feedback">
+        <h2>Você errou</h2>
+        <b>
+            <p>
+                💡DICA: O complemento de X em relação a Y, é tudo que falta para X se tornar Y, ou seja Y - X 
+            </p>
+        </b>
+            <button id="botao-feedback" class="botao-feedback">Início</button>
+    </div>
+    <script src="scripts/script5.js"></script>
+</body>
+</html>
+

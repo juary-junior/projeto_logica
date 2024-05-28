@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Projeto Lógica computacinal</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./assets/logo.png" alt="Cerebro desafiante" width="150px" height="150px">
+        <h1>Pergunta 3 de 6</h1>
+    </header>
+    <div id="container" class="container">
+        <div class="pergunta">
+            <p>
+                Considere três reservatórios A, B e C, sendo que o reservatório A faz a criação de 
+                Tilápia, Dourado e Surubim, B faz criação de Tilápia, Salmão e Atum, e C faz a criação de 
+                Sardinha e Salmão. Dado o conjunto dos reservatórios, determine (A∩B)UC.
+            </p>
+        </div>
+        <div class="respostas1e2">
+            <button class="resposta" onclick="showSummary('certa')">
+                Tilápia, Sardinha e Salmão
+            </button>
+            <button class="resposta" onclick="showSummary('errada')">
+                Salmão e Sardinha
+            </button>
+        </div>
+        <div class="respostas3e4">
+            <button class="resposta" onclick="showSummary('errada')">
+                Tilápia
+            </button>
+            <button class="resposta" onclick="showSummary('errada')">
+                Salmão, Atum e Sardinha
+            </button>
+        </div>
+    </div>
+    <div id="feedback" class="hidden feedback">
+        <h2>Você errou</h2> 
+        <b><p>💡 DICA: 
+            Primeiro dê prioridade as operações dentro dos parênteses, para assim prosseguir para as operações
+            fora dos parênteses. Lembre-se: União(U) = união dos conjuntos e Interseção(∩) = elementos em comum dos
+            conjuntos envolvidos na interseção
+        </p></b>
+        <button id="botao-feedback" class="botao-feedback">Início</button>
+    </div>
+    <script src="scripts/script3.js"></script>
+</body>
+</html>

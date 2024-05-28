@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Projeto Lógica computacinal</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./assets/logo.png" alt="Cerebro desafiante" width="150px" height="150px">
+        <h1>Pergunta 1 de 6</h1>
+    </header>
+    <div id="container" class="container">
+        <div class="pergunta">
+            <p>
+                Em um aquário, de 250 peixes, 125 são da cor dourada, 90 são da cor branca e 70 são da cor dourada e branca.<br>Quantos peixes não são nem da cor branca, nem da cor dourada?
+            </p>
+        </div>
+        <div class="respostas1e2">
+            <button class="resposta" onclick="showSummary('certa')">
+                105
+            </button>
+            <button class="resposta" onclick="showSummary('errada')">
+                125
+            </button>
+        </div>
+        <div class="respostas3e4">
+            <button class="resposta" onclick="showSummary('errada')">
+                90
+            </button>
+            <button class="resposta" onclick="showSummary('errada')">
+                35
+            </button>
+        </div>
+    </div>
+    <div class="caixa_feedback">
+        <div id="feedback" class="feedback hidden">
+            <h2>VOCÊ ERROU</h2> 
+            <b><p>💡 DICA: Tente fazer o diagrama de Venn e descobrir a quantidade de peixes da cor dourada e branca, para assim
+                conseguir descobrir a quantidade de peixes de outras cores.
+            </p></b>
+            <button id="botao-feedback" class="botao-feedback"> Início</button>
+        </div>
+    </div>
+    
+    <script src="scripts/script1.js"></script>
+</body>
+
+</html>
